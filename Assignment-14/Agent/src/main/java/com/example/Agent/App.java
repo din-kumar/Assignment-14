@@ -10,7 +10,7 @@ public class App
         
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
         JdbcTemplate template = context.getBean("jdbcTemplate", JdbcTemplate.class);
-		String query = "update agent set name='kuldeepak' where id=108";
+		String query = "update agent set name='dinbandhu' where id=10";
 		String SQL = "select * from agent";
 		Agentdao a1 = (Agentdao) context.getBean("a2");
 		int st = a1.saveAgent(new Agent(10, "Aman", "25%"));
